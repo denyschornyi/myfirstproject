@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Multitask</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+	<script>
+$(document).ready(function(){
+    $('.tabs_menu a').click(function(e) {
+        e.preventDefault();
+        $('.tabs_menu .active').removeClass('active');
+        $(this).addClass('active');
+        var tab = $(this).attr('href');
+        $('.tab').not(tab).fadeOut(100);
+        $(tab).fadeIn(500);
+    });
+});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="czapka">
+
+			<div id="kontakt">
+				<p><strong>Zadzwoń do nas:  &nbsp; </strong>
+					<a href="tel: +48 792 983 234">
+						&#9990; +48 729 983 234			 
+					</a>
+				</p>
+			</div>
+
+			<div id="letter">
+				<p><strong>Napisz do nas:   &nbsp; </strong>
+					<a href="mailto:multitask.gdansk@gmail.com">
+					&#9993; multitask.gdansk@gmail.com
+					</a>
+				</p>
+			</div>
+		</div>
+		<hr>
+
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="img/logo.png"></a>
+		</div>
+		<nav>
+			<div class="topnav" >
+				<ul class="top_menu">
+				  	<li><a href="index.html">HOME</a></li>
+					<li><a href="sprzatania.html">OFERTA</a>		
+						<ul class="sub">
+							<li><a href="biur.html">SPRĄTANIA BIUR</a></li>
+							<li><a href="mieszkan.html">SPRZĄTANIA MIESZKAŃ</a></li>
+							<li><a href="dywan.html">PRANIE DYWAÓN</a></li>
+							<li><a href="pomoc.html">POMÓC DOMOWA</a></li>
+						</ul> 
+					</li>   			
+					<li><a href="polecenia.html">POLECAJĄ  NAS</a></li>
+					<li><a href="cennik.html">CENNIK</a></li>
+					<li><a href="geolokacja.html">GEOLOKACJA</a></li>
+					<li><a href="kontakt.html">ZAMÓW</a></li>
+					<li><a id="menu" href="#" class="icon">&#9776</a></li>
+				</ul>
+			</div>
+		</nav>			
+	</header>		
+
+	<main>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="img/image.jpg">
+		</div>
+		
+				<div class="text_main">
+					<h1>Nigdy nie jest odpowiedni czas na sprzątanie</h1>	
+				 	<h2>Dlatego my zrobimy to za Ciebie</h2>
+				</div>	
+
+
+				<div id="zelenka">
+					<div class="tabl">
+						<i class="fas fa-map-marker-alt"></i>
+						<h3>Przyjedź do nas</h3><br>
+						<p>ul. Zawiszy Czarnego 14</p><br>
+						<p>80-433 Gdańsk</p>
+					</div>
+
+					<div class="tabl">
+						<i class="far fa-clock"></i>
+						<h3>Godziny otwarcia</h3><br>
+						<p>&nbsp;Um&oacute;w się telefonicznie</p>
+					</div>
+
+					<div class="tabl">
+						<i class="fas fa-mobile-alt"></i>
+						<h3>Skontaktuj się z nami</h3><br>
+						<p>Telefon: +48 729 983 234<br><br>Email: multitask.gdansk@gmail.com</p>
+					</div>
+
+					<div class="tabl">
+						<i class="fas fa-th-list"></i>
+						<h3>Nasza oferta:&nbsp;
+						<br />* sprzątanie,<br />* pomoc domowa<br />* chemia gospodarcza</h3><br>
+						<p>Szczeg&oacute;ły w zakładce <strong>
+						<a href="oferta.html">oferta</a>
+						</strong><span style="background-color: #ffffff;"><br /></span></p>
+					</div>
+
+				</div>
+
+				<div id="perek">
+						<p><h2>Jak sprzątniemy mieszkanie</h2></p><br>
+						<p><span>Nasz pracownik przychodzi o wyznaczonej porze wszystkimi niezbędnymi<br> rzeczami i natychmiast zaczyna pracować. Możesz ocenić wynik </span></p><br>
+				
+					<div class="tabs_box">
+						<ul class="tabs_menu">
+							<li><a href="#tab1" class="active"><strong>Pokój</strong></a></li>
+							<li><a href="#tab2"><strong>Korytarz</strong></a></li>
+							<li><a href="#tab3"><strong>Kuchnia</strong></a></li>
+							<li><a href="#tab4"><strong>Wanna</strong></a></li>
+						</ul>
+
+						<div class="tab" id="tab1">
+							<img src="photo/pokoj.jpg">
+						</div>
+
+						<div class="tab" id="tab2">
+							<img src="photo/korytarz.jpg">
+						</div>
+
+						<div class="tab" id="tab3">
+							<img src="photo/kuchnia.jpg">
+						</div>
+
+						<div class="tab" id="tab4">
+							<img src="photo/wanna.jpg">
+						</div>
+
+					</div>					
+				</div>
+
+
+		<div class="center">
+			<hr class="hrom">
+				<h1><span>Zkontaktuj z MultiTask</span></h1>
+				<p><strong>W razie róznych pytań</strong></p><br>
+					<form class="kontakt">
+						<input id="name_form" name="imie" type="text" placeholder="Imię i nazwisko *" required  >
+						<input id="text_form" name="text" type="text" placeholder="Email *" required >
+						<input id="tel_form" name="tel" type="text" placeholder="Telefon" required ><br>
+						<textarea id="textarea_form" name="text" placeholder="Wiadomość *" cols="100" rows="15" required ></textarea><br> <br>
+						<input type="submit" class="efekt" value="Wyślij"  >
+						<hr class="hrom">
+					</form>
+		</div><!--center-->
+
+	</main>
+
+
+
+
+	<footer>
+			<nav>				
+					<a href="index.html">HOME</a>
+					<a href="sprzatania.html">OFERTA</a>		
+					<a href="polecenia.html">POLECAJĄ  NAS</a>
+					<a href="cennik.html">CENNIK</a>
+					<a href="cennik.html">GEOLOKACJA</a>
+					<a href="kontakt.html">ZAMÓW</a>
+			</nav>
+				<div class="social">
+					<a href="https://facebook.com"><img class="face" src="social/face.png"></a>
+					<a href="#"><img class="face" src="social/em.png"></a>
+					<a href="https://google.com"><img class="face" src="social/goo.png"></a>
+					<a href="https://instagram.com"><img class="face" src="social/inst.png"></a>
+				</div>
+				<hr>
+				<p>MultiTask 2014-2018</p>
+				<p>GDANSK</p>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</body>
+</html>
