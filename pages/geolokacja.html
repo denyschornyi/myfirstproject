@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Multitask</title>
-	<link rel="stylesheet" type="text/css" href="kontakt.css">
+	<link rel="stylesheet" type="text/css" href="../css/geolokacja.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 </head>
@@ -30,12 +30,12 @@
 		<hr>
 
 		<div class="logo">
-			<a href="index.html"><img class="graficlogo" src="logo.png"></a>
+			<a href="index.html"><img class="graficlogo" src="../img/logo.png"></a>
 		</div>
 		<nav>
 			<div class="topnav" >
 				<ul class="top_menu">
-				  	<li><a href="index.html">HOME</a></li>
+				  	<li><a href="../index.html">HOME</a></li>
 					<li><a href="sprzatania.html">OFERTA</a>		
 						<ul class="sub">
 							<li><a href="biur.html">SPRĄTANIA BIUR</a></li>
@@ -55,42 +55,32 @@
 	</header>		
 
 	<main>
-		<h1>Zkontaktuj z nami</h1>
-		<form action="chornijj14@gmail.com" method="post">
-		<div class="center">
+			<h1>LOCATION</h1>
 			<hr class="hrom">
-				<p>FORMULARZ ZAMOWENIA SPRZĄTANIA</p><br>
-					<form class="kontakt" method="post" action="wyslij_email.php">
-						<input class="form_input" name="imie" type="text" placeholder="Imię i nazwisko *" required >
-						<input class="form_input" name="email" type="email" placeholder="Email *" required >
-						<input class="form_input" name="tel" type="text" placeholder="Telefon" ><br>
-						<textarea class="form_input" name="text" placeholder="Wiadomość *"  required></textarea><br>
-						<input type="submit" class="efekt" value="Wyślij"  >
-						<hr class="hrom">
-					</form>
-		</div><!--center-->
+					<div class="maps">
 
-</form>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2763.378186583104!2d18.614206473077623!3d54.37968822296198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd7496244552fb%3A0x791aea09c393d30f!2sZawiszy+Czarnego+14%2C+Gda%C5%84sk!5e0!3m2!1spl!2spl!4v1501504336679" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div style="background:transparent;position:absolute;width:100%;height:305px;margin-top:-305px;" onclick="$(this).hide();">
+
+			</div>
+		</div>
+		<hr class="hrom">
+
 	</main>
 
 
 
 
 	<footer>
-			<nav id="down">				
-					<a href="index.html">HOME</a>
+			<nav>				
+					<a href="../index.html">HOME</a>
 					<a href="sprzatania.html">OFERTA</a>		
 					<a href="polecenia.html">POLECAJĄ  NAS</a>
 					<a href="cennik.html">CENNIK</a>
 					<a href="cennik.html">GEOLOKACJA</a>
 					<a href="kontakt.html">ZAMÓW</a>
 			</nav>
-				<div class="social">
-					<a href="https://facebook.com"><img class="face" src="social/face.png"></a>
-					<a href="#"><img class="face" src="social/em.png"></a>
-					<a href="https://google.com"><img class="face" src="social/goo.png"></a>
-					<a href="https://instagram.com"><img class="face" src="social/inst.png"></a>
-				</div>
+				
 				<hr>
 				<p>MultiTask 2014-2018</p>
 				<p>GDANSK</p>

@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>Multitask</title>
-	<link rel="stylesheet" type="text/css" href="pomoc.css">
+	<link rel="stylesheet" type="text/css" href="../css/polecenia.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<header>
@@ -30,12 +31,12 @@
 		<hr>
 
 		<div class="logo">
-			<a href="index.html"><img class="graficlogo" src="logo.png"></a>
+			<a href="index.html"><img class="graficlogo" src="../img/logo.png"></a>
 		</div>
 		<nav>
 			<div class="topnav" >
 				<ul class="top_menu">
-				  	<li><a href="index.html">HOME</a></li>
+				  	<li><a href="../index.html">HOME</a></li>
 					<li><a href="sprzatania.html">OFERTA</a>		
 						<ul class="sub">
 							<li><a href="biur.html">SPRĄTANIA BIUR</a></li>
@@ -54,35 +55,57 @@
 		</nav>			
 	</header>		
 
-
 	<main>
-		<h1>POMOC DOMOWA</h1>
+		<h1>Nasi Klienci</h1>
 		<hr class="hrom">
-		<div class="tako">
-		<p style="text-align: left;">Cena za godzinę pracy to 30 zł</p><br>
-		<p style="text-align: left;">Sprzątanie raz w tygodniu minimum 3-4 godziny</p><br>
-		<p style="text-align: left;">W przypadku częstszego sprzątania atrakcyjne rabaty!</p><br>
-		<p style="text-align: left;">Wyręczymy Cię w czynnościach domowych takich jak pranie, prasowanie, porządkowanie szafy, zmywanie naczyń, zmiana pościeli.</p><br>
-		<p style="text-align: left;">Jeśli masz pytania o inne podobne prace domowe skontaktuj się z nami!</p><br>
-		</div>
+		<div class="wrap">
+			
+				<div class="wrap_itams" ><img id="img1" class="company" src="company/1.png"></div>
+				<div class="wrap_itam"><img id="img2" class="company" src="company/2.png"></div>
+				<div class="wrap_itams"><img id="img3" class="company" src="company/3.png"></div>
+				<div class="wrap_itam"><img id="img4" class="company" src="company/4.png"></div>
+				<div class="wrap_itam"><img id="img5" class="company" src="company/5.png"></div>
+				<div class="wrap_itams"><img id="img6" class="company" src="company/6.png"></div>
+				<div class="wrap_itam"><img id="img7" class="company" src="company/7.png"></div>
+				<div class="wrap_itams"><img id="img8" class="company" src="company/8.png"></div>
+				<div class="wrap_itams"><img id="img9" class="company" src="company/9.png"></div>
+				<div class="wrap_itam"><img id="img10" class="company" src="company/10.png"></div>
+				<div class="wrap_itams"><img id="img11" class="company" src="company/11.png"></div>
+				<div class="wrap_itam"><img id="img12" class="company" src="company/12.png"></div>
+
+		</div>	
+
+
+<script type="text/javascript">
+	$(".company").mouseenter(showImage);
+	$(".company").mouseleave(hideImage);
+	function showImage() {
+		let src = $(this).attr('src').split('.')[0]+'a.png';
+		$(this).attr('src', src);
+	}
+		function hideImage() {
+		let src = $(this).attr('src').slice(0, -5) + '.png';
+		console.log(src);
+		$(this).attr('src', src);
+	}
+</script>
+
 		<hr class="hrom">
 	</main>
 
+
+
+
 	<footer>
 			<nav>				
-					<a href="index.html">HOME</a>
+					<a href="../index.html">HOME</a>
 					<a href="sprzatania.html">OFERTA</a>		
 					<a href="polecenia.html">POLECAJĄ  NAS</a>
 					<a href="cennik.html">CENNIK</a>
 					<a href="cennik.html">GEOLOKACJA</a>
 					<a href="kontakt.html">ZAMÓW</a>
 			</nav>
-				<div class="social">
-					<a href="https://facebook.com"><img class="face" src="social/face.png"></a>
-					<a href="#"><img class="face" src="social/em.png"></a>
-					<a href="https://google.com"><img class="face" src="social/goo.png"></a>
-					<a href="https://instagram.com"><img class="face" src="social/inst.png"></a>
-				</div>
+				
 				<hr>
 				<p>MultiTask 2014-2018</p>
 				<p>GDANSK</p>
